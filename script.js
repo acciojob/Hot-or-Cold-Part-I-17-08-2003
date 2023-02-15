@@ -4,17 +4,18 @@ var numPtag = document.getElementById("num");
 var res=document.getElementById("respond");
 var inputvalue = document.getElementById("guess").value;
 
-function randomnumbergenrator{}{
-	randomnum =Math.floor(Math.random() +41) -20;
+function randomNumberGenrator(){
+	randomNum = Math.floor(Math.random() +40) -20;
+document.getElementById("num").innerText = randomNum;
 	guessNum();
 	print();
 	
 }
-function guessnum(){
+function guessNum(){
 	input =Number(document.getElementById("guess").value);
 }
 function print(){
-	if (Math.abs(randomNum-input)<=5){
+	if (Math.abs(randomNum-input) <=5){
 		document.getElementById("respond").innerText ="Hot";
 		
 	}else{
@@ -22,4 +23,4 @@ function print(){
 	}
 	
 }
-btn.addEventListener("click", randomnumbergenrator);
+btn.addEventListener("click", randomNumberGenrator);
