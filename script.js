@@ -19,7 +19,7 @@ function print(){
 		document.getElementById("respond").innerText ="Hot";
 		
 	}else{
-		document.getElementById("respond").innerHTML="cold";
+		document.getElementById("respond").innerHTML="Cold";
 	}
 	
 }
